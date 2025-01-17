@@ -166,6 +166,10 @@
         margin: 0 auto;
     }
 
+    .principal .footer{
+        gap: 4px;
+    }
+
     .principal h1{
         font-size: 1.2rem;
     }
