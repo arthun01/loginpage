@@ -157,7 +157,16 @@
         flex-direction: column;
     }
 
+    .secundario h1{
+        font-size: 1.8rem;
+        text-align: center;
+    }
+
     .principal{
         margin: 0 auto;
+    }
+
+    .principal h1{
+        font-size: 1.2rem;
     }
   }
