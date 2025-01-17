@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', serif;
+    text-decoration: none;
+}
+
+.login{
+    width: 100vw;
+    height: 100vh;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+.secundario{
+    background-image: url(./assets/back.svg);
+    background-repeat: no-repeat;
+    background-size: 150%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.secundario a img{
+    width: 50px;
+
+    transition: .4s ease;
+}
+
+.secundario a img:hover{
+    transform: scale(1.1) rotate(-4deg);
+
+}
+
+.secundario h1{
+    font-size: 5rem;
+    text-align: left;
+    color: #FFF;
+}
+
+
+/*----------------------------*/
+
+.principal{
+    background-color: #FFF;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+    margin: 50px 200px;
+}
+
+.principal .text{
+    background-color: #FFF;
+}
+
+.principal .text h1{
+    color: #121212;
+    font-size: 2rem;
+}
+
+.principal .text p{
+    color: #9b9b9b;
+    margin-top: 20px;
+}
+
+.principal form{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.principal form .btn{
+    cursor: pointer;
+    background-color: #8f2eb8;
+    border: none;
+    color: #FFF;
+}
+
+.principal form label{
+    color: #9b9b9b;
+    margin-bottom: 10px;
+}
+
+.principal form .pass{
+    margin-top: 16px;
+}
+
+.principal form .text{
+    height: 60px;
+    border-radius: 8px;
+    border: 1px solid #9b9b9b;
+    padding: 10px;
+}
+
+.principal form .finform{
+    margin: 32px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.principal form .finform a{
+    color: #9b9b9b;
+}
+
+.principal form .finform .check{
+    display: flex;
+    justify-content: center;
+    gap: 4px;
+}
+
+.principal form .finform .check label{
+    color: #121212;
+}
+
+.principal .footer{
+    display: flex;
+    gap: 16px;
+    margin-top: 64px;
+}
+
+.principal .footer p{
+    color: #9b9b9b;
+}
+
+.principal .footer a{
+    color: #8f2eb8;
+}
+
+.top{
+    margin-top: 50px;
+}
+
+.check input[type="checkbox"]{
+    -webkit-appearance: none;
+    background-color: #FFF;
+    border: 2px solid #9b9b9b;
+    border-radius: 50%;
+
+    width: 20px;
+    height: 20px;
+}
+
+.check input[type="checkbox"]:checked{
+    background-color: #8f2eb8;
+    border: none;
+}
+
+@media (max-width: 1080px) {
+    .login{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .principal{
+        margin: 0 auto;
+    }
+  }
